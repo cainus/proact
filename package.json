@@ -1,5 +1,5 @@
 {
-  "name": "dominate",
+  "name": "proact",
   "version": "0.0.0",
   "description": "react component testing idea",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cainus/dominate.git"
+    "url": "https://github.com/cainus/proact.git"
   },
   "keywords": [
     "react",
@@ -18,9 +18,9 @@
   "author": "Gregg Caines <gregg@caines.ca>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cainus/dominate/issues"
+    "url": "https://github.com/cainus/proact/issues"
   },
-  "homepage": "https://github.com/cainus/dominate",
+  "homepage": "https://github.com/proact/proact",
   "dependencies": {
     "jsdom": "1.0.0-pre.7",
     "react": "0.11.2"

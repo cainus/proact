@@ -7,14 +7,14 @@ console.log("set process.env.ENV to ", process.env.ENV);
 
 CONFIG = require('./config');
 
-var dominate = function(){
-  if (this instanceof dominate) {
+var proact = function(){
+  if (this instanceof proact) {
   } else {
-    return new dominate();
+    return new proact();
   }
 };
 
-dominate.prototype.fromHtml = function(html, cb){
+proact.prototype.fromHtml = function(html, cb){
   var dom = jsdom.jsdom;
   var that = this;
   jsdom.env(
@@ -30,12 +30,12 @@ dominate.prototype.fromHtml = function(html, cb){
   );
 }
 
-dominate.prototype.fromReact = function(reactObject, cb){
+proact.prototype.fromReact = function(reactObject, cb){
   var html = React.renderComponentToString(reactObject);
   this.fromHtml(html, cb);
 };
 
-dominate.prototype.getText = function(el){
+proact.prototype.getText = function(el){
   el = el || 'body';
   var $ = this.$;
   return $(el).find(":not(iframe)").addBack().contents()
@@ -48,4 +48,4 @@ dominate.prototype.getText = function(el){
           .toArray();
 };
 
-exports.dominate = dominate;
+exports.proact = proact;
