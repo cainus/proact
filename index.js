@@ -46,4 +46,4 @@ proact.prototype.getText = function(el){
           .toArray();
 };
 
-modules.export = proact;
+module.exports = proact;
