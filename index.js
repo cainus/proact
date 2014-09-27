@@ -5,8 +5,6 @@ var jsdom = require('jsdom');
 process.env.ENV = 'test';
 console.log("set process.env.ENV to ", process.env.ENV);
 
-CONFIG = require('./config');
-
 var proact = function(){
   if (this instanceof proact) {
   } else {

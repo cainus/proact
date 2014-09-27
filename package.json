@@ -1,6 +1,6 @@
 {
   "name": "proact",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "react component testing idea",
   "main": "index.js",
   "scripts": {
