@@ -26,7 +26,7 @@ proact.prototype.fromHtml = function(html, cb){
       return cb(errors, window);
     }
   );
-}
+};
 
 proact.prototype.fromReact = function(reactObject, cb){
   var html = React.renderComponentToString(reactObject);
@@ -46,4 +46,4 @@ proact.prototype.getText = function(el){
           .toArray();
 };
 
-exports.proact = proact;
+modules.export = proact;
